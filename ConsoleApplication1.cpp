@@ -1,4 +1,4 @@
-// ConsoleApplication1.cpp: определяет точку входа для консольного приложения.
+// ConsoleApplication1.cpp: Г®ГЇГ°ГҐГ¤ГҐГ«ГїГҐГІ ГІГ®Г·ГЄГі ГўГµГ®Г¤Г  Г¤Г«Гї ГЄГ®Г­Г±Г®Г«ГјГ­Г®ГЈГ® ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГї.
 //
 
 #include "stdafx.h"
@@ -7,7 +7,7 @@
 
 
 
-// -----------------------------------------------------------------------------------------------------------A---------------------------------------------------------
+// -----------------------------------------------------------------------------------------------------------A----------------------------------------------------------
 
 
 class Array{
@@ -81,11 +81,11 @@ public:
 
 
 	virtual void screenOn() {
-		std::cout << "Экран устройства \"" << name << "\" включён." << std::endl;
+		std::cout << "ГќГЄГ°Г Г­ ГіГ±ГІГ°Г®Г©Г±ГІГўГ  \"" << name << "\" ГўГЄГ«ГѕГ·ВёГ­." << std::endl;
 	}
 
 	virtual void screenOff() {
-		std::cout << "Экран устройства \"" << name << "\" выключен." << std::endl;
+		std::cout << "ГќГЄГ°Г Г­ ГіГ±ГІГ°Г®Г©Г±ГІГўГ  \"" << name << "\" ГўГ»ГЄГ«ГѕГ·ГҐГ­." << std::endl;
 	}
 
 	std::string Name(){
@@ -93,7 +93,7 @@ public:
 	}
 
 	void showInfo() {
-		std::cout << "Устройство: " << name << ", память: " << memory << " МБ" << std::endl;
+		std::cout << "Г“Г±ГІГ°Г®Г©Г±ГІГўГ®: " << name << ", ГЇГ Г¬ГїГІГј: " << memory << " ГЊГЃ" << std::endl;
 	}
 };
 
@@ -112,11 +112,11 @@ public:
 	}
 
 	void screenOn() {
-		std::cout << "Экран телефона \"" << Name() << "\" включён." << std::endl;
+		std::cout << "ГќГЄГ°Г Г­ ГІГҐГ«ГҐГґГ®Г­Г  \"" << Name() << "\" ГўГЄГ«ГѕГ·ВёГ­." << std::endl;
 	}
 
 	void screenOff() {
-		std::cout << "Экран телефона \"" << Name() << "\" выключен." << std::endl;
+		std::cout << "ГќГЄГ°Г Г­ ГІГҐГ«ГҐГґГ®Г­Г  \"" << Name() << "\" ГўГ»ГЄГ«ГѕГ·ГҐГ­." << std::endl;
 	}
 
 	int getbattery(){
@@ -141,11 +141,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::cout << "\n" << std::endl;
 	std::cout << "arr[2] = " << arr[2] << "\n";
 
-	std::cout << "Размер: " << arr.size() << "\n";
+	std::cout << "ГђГ Г§Г¬ГҐГ°: " << arr.size() << "\n";
 
 
 
-	Device base("Базовое устройство", 2048);
+	Device base("ГЃГ Г§Г®ГўГ®ГҐ ГіГ±ГІГ°Г®Г©Г±ГІГўГ®", 2048);
 	base.screenOn();
 	base.showInfo();
 	base.screenOff();
@@ -156,9 +156,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	iphone.screenOff();
 
 
-	std::cout << "Всего создано устройств: " << Device::totalDevices << "\n";
-	std::cout << "Общая память: " << Device::totalMemory << " МБ\n";
-	std::cout << "Средняя память: " << Device::averageMemory << std::endl;
+	std::cout << "Г‚Г±ГҐГЈГ® Г±Г®Г§Г¤Г Г­Г® ГіГ±ГІГ°Г®Г©Г±ГІГў: " << Device::totalDevices << "\n";
+	std::cout << "ГЋГЎГ№Г Гї ГЇГ Г¬ГїГІГј: " << Device::totalMemory << " ГЊГЃ\n";
+	std::cout << "Г‘Г°ГҐГ¤Г­ГїГї ГЇГ Г¬ГїГІГј: " << Device::averageMemory << std::endl;
 
 
 
